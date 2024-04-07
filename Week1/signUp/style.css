@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    
+    background-color: #bfecff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 650px;
+    background: #d8f6f9;
+
+    border-radius: 8px;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.form-control input {
+    width: 300px;
+    height: 30px;
+    background: #d8f6f9;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.form-button button {
+    width: 200px;
+    height: 30px;
+    color:#ffffff;
+    background-color: #8a9295;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-wrapper {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 150px;
+    background-color: #ffffff;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 2px;
+}
+
+.modal-wrapper button {
+    background-color: #e7e3e3;
+    border: solid 1px;
+    margin-left: 80%;
+    border-radius: 2px;
+}
