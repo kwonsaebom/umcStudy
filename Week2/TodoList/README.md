@@ -1,5 +1,5 @@
-✨✨ Mission ✨✨
-
+✨✨ Mission ✨✨ 
+<br/>
 <aside>
 💡 해야 할 일 추가와 삭제를 할 수 있는 ToDo List를 만들어보세요.
 
@@ -38,5 +38,6 @@ const [todos, setTodos] = useState([
 
 <br/><br/><br/>
 ✨✨ My Result ✨✨
+<br/><br/>
 <img width="1256" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/b5c2b4b3-0f96-4833-935a-f88cfb59f794">
 
