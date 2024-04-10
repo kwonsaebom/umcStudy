@@ -1,8 +1,29 @@
-# React + Vite
+✨✨ Mission ✨✨ 
+<br/>
+<aside>
+💡 영화 포스터에 마우스를 올려놓았을 때만, 영화의 상세 설명이 보이도록 구현해봅시다!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+css의 어떤 선택자를 사용하는 것이 좋을까요? 
 
-Currently, two official plugins are available:
+`**hint) 마우스를 요소 위에 올렸을 때 적용되는 스타일입니다.**`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[화면 기록 2024-03-29 오전 12.26.37.mov](https://prod-files-secure.s3.us-west-2.amazonaws.com/f1912130-0409-4e90-a90f-6091ae253e73/9dbb3ff6-faaf-436f-8281-a00e5f401ab8/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2024-03-29_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.26.37.mov)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/f1912130-0409-4e90-a90f-6091ae253e73/1b37c195-458f-412e-8e06-96247f34e9c9/Untitled.png)
+
+</aside>
+
+- [ ]  영화 상세 설명 컴포넌트 만들기
+    
+    → 우선은 마우스 커서의 위치와 상관 없이 화면에 보여도 괜찮으니, 영화의 상세 설명이 적혀있는 컴포넌트를 만들어주세요.
+    
+- [ ]  마우스를 포스터 위에 올리지 않았을 때는 화면에서 상세 설명 컴포넌트가 보이지 않게 만들기
+    - [ ]  마우스를 포스터 위에 올렸을 때만 화면에서 해당 컴포넌트가 보이게 만들기
+        
+        (사진처럼 **포스터 위에 영화 상세 설명 컴포넌트가 있어야** 합니다!)
+
+<br/><br/><br/>
+✨✨ My Result ✨✨
+<br/><br/>
+<img width="1262" alt="스크린샷 2024-04-11 오전 1 00 46" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/f020fde7-fef0-4048-abf1-8244362fe3de">
+
