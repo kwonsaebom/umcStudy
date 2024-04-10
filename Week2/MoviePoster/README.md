@@ -7,9 +7,8 @@ css의 어떤 선택자를 사용하는 것이 좋을까요?
 
 `**hint) 마우스를 요소 위에 올렸을 때 적용되는 스타일입니다.**`
 
-[화면 기록 2024-03-29 오전 12.26.37.mov](https://prod-files-secure.s3.us-west-2.amazonaws.com/f1912130-0409-4e90-a90f-6091ae253e73/9dbb3ff6-faaf-436f-8281-a00e5f401ab8/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2024-03-29_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.26.37.mov)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/f1912130-0409-4e90-a90f-6091ae253e73/1b37c195-458f-412e-8e06-96247f34e9c9/Untitled.png)
+![image](https://github.com/kwonsaebom/umcStudy/assets/94830364/67ab8efc-3487-47dc-b27b-fea68cefb180)
 
 </aside>
 
