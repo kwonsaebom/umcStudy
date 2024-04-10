@@ -12,10 +12,12 @@ function Modal() {
     return (
         <>
             {modalOpen && ( // 모달이 열려있을 때만 모달을 렌더링합니다.
-                <div className='modal'>
-                    <h2>안녕하세요</h2>
-                    <p>모달 내용은 어쩌고 저쩌고..</p>
-                    <button id = "close" onClick={closeModal}>닫기</button>
+                <div className="modal-wrapper">
+                    <div className='modal'>
+                        <h2>안녕하세요</h2><br/>
+                        <p>모달 내용은 어쩌고 저쩌고..</p>
+                        <button id = "close" onClick={closeModal}>닫기</button>
+                    </div>
                 </div>
             )}
         </>

@@ -1,3 +1,5 @@
+
+You
 .main {
     position: fixed;
     top: 0;
@@ -11,10 +13,16 @@
 }
   
 .modal {
+    position: fixed; /* 화면에 고정되도록 설정합니다. */
+    top: 50%; /* 화면 상단에서 절반 지점에 위치하도록 설정합니다. */
+    left: 50%; /* 화면 좌측에서 절반 지점에 위치하도록 설정합니다. */
+    transform: translate(-50%, -50%); /* 수직 및 수평으로 절반씩 이동하여 모달을 중앙에 정렬합니다. */
     background: white;
     padding: 24px 16px;
     border-radius: 4px;
     width: 320px;
+    z-index: 1000; /* 다른 요소 위에 나타나도록 설정합니다. */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* 그림자 효과를 추가합니다. */
 }
   
 .modal-title {
