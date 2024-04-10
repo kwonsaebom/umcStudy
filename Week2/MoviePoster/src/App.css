@@ -1,0 +1,67 @@
+div {
+    background-color: #1e2161;
+}
+.movie-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1e2161;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #1e2161;
+    color: white;
+  }
+  
+  .movie-info {
+    display: flex;
+    align-items: 10px;
+    background-color: #50539e;
+  }
+
+  .movie-title {
+    background-color: #50539e;
+  }
+  
+  .movie-vote {
+    margin-left: 10px;
+    vertical-align: middle;
+    background-color: #50539e;
+    }
+
+  .movie-item { 
+    position: relative;
+    padding: 10px;
+    background-color: #50539e;
+    overflow: hidden; 
+  }
+  
+  .movie-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-item .movie-overview {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* 이미지와 동일한 크기 설정 */
+    background-color: rgba(69, 69, 69, 0.8);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.movie-img:hover .movie-overview {
+    display: block;
+}
