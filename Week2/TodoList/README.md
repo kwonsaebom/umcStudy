@@ -1,3 +1,5 @@
+✨✨ Mission ✨✨
+
 <aside>
 💡 해야 할 일 추가와 삭제를 할 수 있는 ToDo List를 만들어보세요.
 
@@ -24,7 +26,8 @@ const [todos, setTodos] = useState([
 
 : 완료를 누른 todo가 기존 todo 상태에 포함되어 있는 것이라면, todo의 완료 상태를 바꿔줄 수 있을 것입니다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/f1912130-0409-4e90-a90f-6091ae253e73/52ce0a3b-b76e-47de-9d6c-b08bac7aaf3b/Untitled.png)
+![image](https://github.com/kwonsaebom/umcStudy/assets/94830364/9c4d5f1e-a78d-4a0d-b0df-af67ae700fef)
+
 
 </aside>
 
@@ -33,6 +36,7 @@ const [todos, setTodos] = useState([
 - [ ]  해야 할 일의 완료를 누르면 해당 할 일이 `해낸 일`로 이동하도록 해주세요.
 - [ ]  해낸 일의 삭제를 누르면 `삭제`되도록 해주세요.
 
-
+<br/><br/><br/>
+✨✨ My Result ✨✨
 <img width="1256" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/b5c2b4b3-0f96-4833-935a-f88cfb59f794">
 
