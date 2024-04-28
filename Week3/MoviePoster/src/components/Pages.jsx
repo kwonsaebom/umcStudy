@@ -20,9 +20,9 @@ const MovieItem = styled(Link)`
   height: auto;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-decoration: none;
   color: black;
-
+  text-decoration: none;
+  
   &:hover {
     .movie-overview {
       display: block;
@@ -100,7 +100,7 @@ function Movie({ endpoint }) {
             ) : (
                 <MovieList>
                     {movies.map(movie => (
-                        <MovieItem key={movie.id} to={`/movie/${movie.id}`}> {/* 해당 영화의 id를 URL에 포함 */}
+                        <MovieItem key={movie.id} to={`/movie/${movie.id}`}> 
                             <div className="movie-info-container">
                                 <MovieImg className="movie-img">
                                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />

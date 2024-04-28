@@ -30,8 +30,9 @@ const NotFound = styled.i`
 const Button = styled.button`
   padding: 1rem 2rem;
   background-color: #4CAF50;
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
+
   border: none;
   border-radius: 5px;
   cursor: pointer;
