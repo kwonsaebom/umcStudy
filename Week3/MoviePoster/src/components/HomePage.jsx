@@ -14,7 +14,7 @@ const WelcomeScreen = styled.div`
   background-color: black;
   color: white;
   padding: 20px;
-  height: 200px
+  height: 200px;
 `;
 
 const SearchScreen = styled.div`
@@ -28,7 +28,7 @@ const Paragraph = styled.div`
   color:white;
   margin-top: 30px;
   text-align:center;
-`
+`;
 
 const Input = styled.input`
   padding: 10px;

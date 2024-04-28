@@ -1,5 +1,5 @@
-// components/Movie.js
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Spinner } from './Spinner';
@@ -11,15 +11,17 @@ const MovieList = styled.div`
   background-color: #1e2161; 
 `;
 
-const MovieItem = styled.div`
+const MovieItem = styled(Link)` 
   position: relative;
   padding: 15px;
   background-color: #50539e;
   overflow: hidden;
   width: 300px;
   height: auto;
-  margin-bottom: 20px; /* 각 항목의 하단 간격 조정을 위해 */
+  margin-bottom: 20px;
   margin-top: 20px;
+  text-decoration: none;
+  color: black;
 
   &:hover {
     .movie-overview {
@@ -98,7 +100,7 @@ function Movie({ endpoint }) {
             ) : (
                 <MovieList>
                     {movies.map(movie => (
-                        <MovieItem key={movie.id}>
+                        <MovieItem key={movie.id} to={`/movie/${movie.id}`}> {/* 해당 영화의 id를 URL에 포함 */}
                             <div className="movie-info-container">
                                 <MovieImg className="movie-img">
                                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
