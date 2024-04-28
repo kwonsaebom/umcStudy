@@ -27,7 +27,7 @@
 
 <img width="1440" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/8eeb66b6-8aa2-4cdb-a3b9-ee7d47f4950a">
 <br/><br/>
-2. 
+2. <br/>
 - [ ]  로그인 버튼, 클릭 시 `로그아웃으로 텍스트가 변경`되게 만들어주기!<br/>
 - [ ]  반대로, 로그아웃 버튼 클릭 시 `로그인 텍스트로 변경`되게 만들어주기!<br/>
 - [ ]  실습 미션의 모든 컴포넌트나 페이지를 스타일링 할 때 `styled-components` 이용하기!<br/>
@@ -36,7 +36,7 @@
 - [ ]  평점을 단순 소수점 값이 아닌 영화 상세페이지에서는, ⭐️ 으로 계산해주세요!<br/>
 - [ ]  줄거리가 없는 경우, 유저들에게 줄거리가 없다고 알려주세요! (줄거리가 있다면 줄거리를 보여주시면 됩니다!)<br/><br/>
 <img width="1440" alt="Untitled 2" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/1a80466a-1145-462f-826c-145ec602720f"><br/><br/>
-3.
+3.<br/>
 - [ ]  잘못된 경로로 갔을 때, `NotFound 페이지`를 보여주세요!!<br/>
 - [ ]  에러 페이지를 구현해보고, `사용자가, 다시 메인 페이지로 이동`할 수 있게 기능을 제공해주세요!<br/><br/>
 <img width="1261" alt="스크린샷 2024-04-29 오전 2 17 42" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/c07ff7ed-680b-423d-ae3d-2e4c37ff1bd8">
