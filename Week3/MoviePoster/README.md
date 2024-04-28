@@ -1,8 +1,28 @@
-# React + Vite
+✨✨ Mission ✨✨ 
+<br/>
+<aside>
+- [ ]  로그인 버튼, 클릭 시 `로그아웃으로 텍스트가 변경`되게 만들어주기!
+- [ ]  반대로, 로그아웃 버튼 클릭 시 `로그인 텍스트로 변경`되게 만들어주기!
+- [ ]  실습 미션의 모든 컴포넌트나 페이지를 스타일링 할 때 `styled-components` 이용하기!
+- [ ]  라우팅 경로를 /movie/영어로된 영화 이름 으로 설정하기! (ex. movie/SpiderMan)
+- [ ]  개별 영화 상세 정보를 각각 어떻게 가져올까요? (여러가지 방법이 있습니다!)
+- [ ]  평점을 단순 소수점 값이 아닌 영화 상세페이지에서는, ⭐️ 으로 계산해주세요!
+- [ ]  줄거리가 없는 경우, 유저들에게 줄거리가 없다고 알려주세요! (줄거리가 있다면 줄거리를 보여주시면 됩니다!)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- [ ]  잘못된 경로로 갔을 때, `NotFound 페이지`를 보여주세요!!
+- [ ]  에러 페이지를 구현해보고, `사용자가, 다시 메인 페이지로 이동`할 수 있게 기능을 제공해주세요! (위 영상 참고)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+</aside>
+
+- [ ]  제목, 해야 할 일을 작성할 수 있는 칸, `해야 할 일/해낸 일`을 표시하는 `컴포넌트 UI`를 만들어 주세요.
+- [ ]  해야 할 일을 작성할 수 있는 `input 컴포넌트`에 내용을 작성하면 `해야 할 일`에 추가 되도록 해주세요.
+- [ ]  해야 할 일의 완료를 누르면 해당 할 일이 `해낸 일`로 이동하도록 해주세요.
+- [ ]  해낸 일의 삭제를 누르면 `삭제`되도록 해주세요.
+<img width="1256" alt="image" src=Untitled 2.png">
+<br/><br/><br/>
+✨✨ My Result ✨✨
+<br/><br/>
+<img width="1256" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/b5c2b4b3-0f96-4833-935a-f88cfb59f794">
+
