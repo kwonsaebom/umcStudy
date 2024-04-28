@@ -45,7 +45,7 @@
 
 <br/><br/><br/>
 ✨✨ My Result ✨✨
-<br/><br/><br/><br/>
+<br/><br/>
 <img width="1164" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/ff3c108d-2996-4ce4-8653-707c82f2415a">
 <br/><br/>
 <img width="1165" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/0e9d2dc3-b6d1-44bf-a7fb-88d57fe6c746"><br/><br/>
