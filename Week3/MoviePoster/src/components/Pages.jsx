@@ -7,8 +7,9 @@ import { Spinner } from './Spinner';
 const MovieList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #1e2161; 
+  
 `;
 
 const MovieItem = styled(Link)` 

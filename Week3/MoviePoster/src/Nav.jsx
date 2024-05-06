@@ -17,7 +17,7 @@ const NavbarMenu = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: yellow;
+    color: gold;
     font-weight: bold;
     font-size: 16px;
   }
@@ -49,19 +49,11 @@ function Nav() {
         <UmcNavbarMenu to={'/umc'}>UMC Movie</UmcNavbarMenu>
       </div>
       <div>
-        {isLoggedIn ? (
-          <>
-            <NavbarMenu to={'/'} onClick={handleLogoutClick}>로그아웃</NavbarMenu>
-          </>
-        ) : (
-          <>
-            <NavbarMenu to={'/'} onClick={handleLoginClick}>로그인</NavbarMenu>
-          </>
-        )}
-        <NavbarMenu to={'/popular'}>Polular</NavbarMenu>
-        <NavbarMenu to={'/nowPlaying'}>Now Playing</NavbarMenu>
-        <NavbarMenu to={'/topRated'}>Top Rated</NavbarMenu>
-        <UpcomingMenu to={'/upcoming'}>UpComing</UpcomingMenu>
+          <NavbarMenu to={'/signUp'}>회원가입</NavbarMenu>
+          <NavbarMenu to={'/popular'}>Polular</NavbarMenu>
+          <NavbarMenu to={'/nowPlaying'}>Now Playing</NavbarMenu>
+          <NavbarMenu to={'/topRated'}>Top Rated</NavbarMenu>
+          <UpcomingMenu to={'/upcoming'}>UpComing</UpcomingMenu>
       </div>
     </Navbar>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
+import SignUp from './SignUp';
 import NowPlaying from './NowPlayingPage';
 import Popular from './PopularPage';
 import TopRated from './TopRatedPage';
@@ -15,7 +16,8 @@ const Home = () => {
       <div>
         <Routes>
           <Route path="/" element={<Navbar><HomePage /></Navbar>} />
-          <Route path="/umc" element={<Navbar><Popular /></Navbar>} />
+          <Route path="/umc" element={<Navbar><HomePage /></Navbar>} />
+          <Route path="/signUp" element={<Navbar><SignUp /></Navbar>} />
           <Route path="/popular" element={<Navbar><Popular /></Navbar>} />
           <Route path="/topRated" element={<Navbar><TopRated /></Navbar>} />
           <Route path="/nowPlaying" element={<Navbar><NowPlaying /></Navbar>} />
