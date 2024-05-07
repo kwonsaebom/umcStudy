@@ -1,54 +1,70 @@
 ✨✨ Mission ✨✨ 
 <br/>
 <aside>
-1. <br/>
-실습 미션을 `Styled-Components`를 활용하여 만들어 주세요!
-- [x]  `TMDB 실제 영화 데이터 불러오기`
-    
-    [The Movie Database (TMDB)](https://www.themoviedb.org/)
-    
-- [x]  `react-router-dom`을 활용해서 Navbar와 Footer를 고정시키고, 가운데의 영화 포스터 내용들만 변경되게 만들어보기! (Navbar, Footer를 고정시키고 가운데 요소만 변경할려면 어떤 것을 써야할지 고민해보기)
-    
-    - [x]  다양한 페이지 컴포넌트 만들고 라우팅 설정하기
-        - 생성할 페이지 컴포넌트 종류
-            
-            `MainPage.jsx`, `PopularPage.jsx`, `NowPlayingPage.jsx`, `TopRatedPage.jsx`, `UpComing.jsx`
-            
-            영상을 보면, Navbar의 영화 카테고리로 구성된 네비게이션 바를 클릭하게 되면, 해당하는 영화의 상세 페이지로 전환이 됩니다! (`MovieDetailPage`를 만들어보고, 영화를 클릭 시, 해당하는 영화의 상세 정보들이 나오게 구현해 보세요!)
-            
-    - [x]  MainPage에서, `‘환영합니다’ 텍스트의 Banner 컴포넌트` 보여주기
-- [x]  Navbar(상단바)에서 Popular를 누르면 `popular 페이지로 이동` 후, `실제 Popular 영화 데이터`를 불러오기
-- [x]  Navbar(상단바)에서 Now Playing을 누르면 `nowplaying 페이지로 이동` 후, 실제 `NowPlaying 영화 데이터`를 불러오기
-- [x]  Navbar(상단바)에서 Top Rated를 누르면 `toprated 페이지로 이동` 후, 실제 `TopRated 영화 데이터`를 불러오기
-- [x]  Navbar(상단바)에서 Up Coming을 누르면 `upcoming 페이지로 이동` 후, 실제 `UpComing 영화 데이터`를 불러오기
-- [x]  Navbar(상단바)에서 `로고(UMC Movie)를 누르면 홈페이지로 이동` 후, `Popular 영화 데이터`를 불러오기
-- [x]  `**컴포넌트 재사용**`을 했는지 확인하기 (재사용하지 않았으면, 리액트를 잘 활용하지 못한 것과 마찬가지 입니다. 재사용성을 고려해서 컴포넌트를 재구성해보세요!)
-- [x]  `Navbar`(상단바) 메뉴 hover시 살짝 커지는 효과, 커서 변경 스타일링 해보기<br/><br/>
+1. 
+    회원가입 유효성 검사 <br/>
+** 실습 미션을 `Styled-Components`를 활용하여 만들어 주세요! **<br/> <br/>
 
-<img width="1440" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/8eeb66b6-8aa2-4cdb-a3b9-ee7d47f4950a">
-<br/><br/>
-2. <br/>
-- 로그인 버튼, 클릭 시 `로그아웃으로 텍스트가 변경`되게 만들어주기!<br/>
-- 반대로, 로그아웃 버튼 클릭 시 `로그인 텍스트로 변경`되게 만들어주기!<br/>
-- 실습 미션의 모든 컴포넌트나 페이지를 스타일링 할 때 `styled-components` 이용하기!<br/>
-- 라우팅 경로를 /movie/영어로된 영화 이름 으로 설정하기! (ex. movie/SpiderMan)<br/>
-- 개별 영화 상세 정보를 각각 어떻게 가져올까요? (여러가지 방법이 있습니다!)<br/>
-- 평점을 단순 소수점 값이 아닌 영화 상세페이지에서는, ⭐️ 으로 계산해주세요!<br/>
-- 줄거리가 없는 경우, 유저들에게 줄거리가 없다고 알려주세요! (줄거리가 있다면 줄거리를 보여주시면 됩니다!)<br/><br/>
-<img width="1440" alt="Untitled 2" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/1a80466a-1145-462f-826c-145ec602720f"><br/><br/>
-3.<br/>
-- 잘못된 경로로 갔을 때, `NotFound 페이지`를 보여주세요!!<br/>
-- 에러 페이지를 구현해보고, `사용자가, 다시 메인 페이지로 이동`할 수 있게 기능을 제공해주세요!<br/><br/>
-<img width="1261" alt="스크린샷 2024-04-29 오전 2 17 42" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/c07ff7ed-680b-423d-ae3d-2e4c37ff1bd8">
-<br/><br/>
-</aside>
+- 이름은 문자열이어야 합니다. 
+- 반드시, 이름을 사용자로부터 입력받아야 합니다. (입력하지 않았을 시 제출하기 폼 버튼 비활성화)
+- 이메일은 문자열이어야 합니다. (이메일은 나중에 로그인할 때 사용되는 아이디입니다.)
+- 이메일 양식을 맞춰주어야 합니다. ‘@’가 있어야합니다.
+- 반드시, 이메일을 사용자로부터 입력을 받아야 합니다. (입력하지 않았을 시 제출하기 폼 버튼 비활성화)
+- 나이는, 숫자를 입력받아야 합니다. (문자열을 입력할 시 해당 에러 메시지 출력)
+- 나이는, 음수가 될 수 없습니다. (음수 값을 입력할 시 해당 에러 메시지 출력)
+- 나이는, 소수가 될 수 없습니다. (소수 값을 입력할 시 해당 에러 메시지 출력)
+- 우리 영화 사이트는, 19살 이상만 가입이 가능합니다. (19살 미만의 숫자를 입력할 시 해당하는 에러 메시지 출력)
+- 반드시, 나이를 사용자로부터 입력을 받아야 합니다. (입력하지 않았을 시 제출하기 폼 버튼 비활성화)
+- 비밀번호는 문자열이어야 합니다.
+- 비밀번호는 최소 4자리 이상이어야 합니다. (4자리 이하일 때 해당 에러 메시지 출력)
+- 비밀번호는 최대 12자리까지 가능합니다. (13자리 입력 시, 해당 에러 메시지 출력)
+- 영어, 숫자, 특수문자를 모두 조합해서 비밀번호를 작성해야 합니다. (모두 조합하지 않았을 때, 해당 에러 메시지가 출력됩니다.)
+- 반드시, 비밀번호를 사용자로부터 입력을 받아야 합니다. (입력하지 않았을 시 제출하기 폼 버튼 비활성화)
+- 비밀번호 확인은 문자열이어야 합니다.
+- 4번에서 작성한 비밀번호와, 5번에서 작성한 비밀번호가 같은지 확인하고, 동일하지 않다면 해당 에러 메시지가 출력됩니다.
+- 반드시, 비밀번호 확인을 사용자로부터 받아야 합니다. (입력하지 않았을 시 제출하기 폼 버튼 비활성화)
 
+<br/>
+**공통**
+
+모든, input창에 해당하는 `**에러 메세지는 실시간으로 변경**`이 되어야 합니다.  아래 예시는 이메일인 경우입니다.
+
+```jsx
+// 이메일 기준
+dyd -> 이메일 양식에 맞지 않습니다. (에러메시지 출력)
+dydals3440@gmail.com -> 에러메시지 제거 (이메일 양식에 맞으므로)
+```
+
+- [x]  에러 메시지가 실시간으로 변동되고, 반영되는지 확인!
+
+유효성 로직을 통과하지 못했는데, 제출하기 버튼 클릭 시 데이터가 전달된다면 이것은 문제가 되겠죠? 유효성 로직을 통과했을 때만, 데이터가 전달될 수 있도록 작업해 주세요!
+
+- [x]  **`유효성 로직이 통과했을 때만, 폼 데이터가 전달`**되는지 `console.log` 통해 확인
+- [x]  모든 스타일링은 `styled-components`를 활용해야 합니다. `섞어쓰면 안됩니다. ❌`
+<img width="675" alt="image" src="https://github.com/Gachon-UMC/6th_UMC_Web_B/assets/94830364/f2b16678-809a-4342-9c24-b81b5ea5e911">
+
+<br/><br/>
+2. 
+영화 찾기 기능 구현 <br/>
+- 이번에는, TMDB 공식 문서, Search 부분을 확인하셔서 이를 바탕으로 검색한 키워드에 해당하는 영화들이 검색되게 검색 기능을 구현하는 게 2번째 미션입니다.
+- `MainPage(’/’)` 경로에 검색 기능을 추가해 주세요!
+- 검색어가 없을 때는 검색 창이 활성화되지 않게 만들어주세요!
+- TMDB 공식 문서 `Search 부분 정독 후` 사용법 익히기 (아래 링크 참고)
+
+[Search - Movies](https://developer.themoviedb.org/reference/search-movie)
+
+- [x]  입력한 키워드에 해당하는 `영화 데이터 화면에 출력`하기!
+- [x]  `Scrollbar`도 멋있게 스타일링 해주기!
+- [x]  검색 목록이 나오는 부분도 멋있게 스타일링 해주기!
+- [x]  매번 타이핑할 때마다, 요청이 가는 것을 영상으로 확인할 수 있습니다. 이게 과연 성능상으로 좋을지, 어떻게 이 현상을 개선할 수 있을지 아래 토글에 작성해 주세요!
+<img width="702" alt="스크린샷 2024-05-08 오전 2 32 56" src="https://github.com/Gachon-UMC/6th_UMC_Web_B/assets/94830364/7159670a-77e2-45cf-a56f-e593ec23539f">
+<br/><br/>
 <br/><br/><br/>
 ✨✨ My Result ✨✨
 <br/><br/>
-<img width="1164" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/ff3c108d-2996-4ce4-8653-707c82f2415a">
+<img width="1209" alt="image" src="https://github.com/Gachon-UMC/6th_UMC_Web_B/assets/94830364/0139ad59-8063-4a10-accb-69ac4899c787">
+
 <br/><br/>
-<img width="1165" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/0e9d2dc3-b6d1-44bf-a7fb-88d57fe6c746"><br/><br/>
-<img width="1166" alt="image" src="https://github.com/kwonsaebom/umcStudy/assets/94830364/24bccd83-143b-472b-ab43-13e39633ef43">
+<img width="1203" alt="image" src="https://github.com/Gachon-UMC/6th_UMC_Web_B/assets/94830364/8b9aaf4d-8570-473c-aa69-1d1cd4ee5fea">
 
 
