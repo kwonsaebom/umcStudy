@@ -12,16 +12,16 @@ const rotation = keyframes`
 `;
 
 const Spinner = styled.div`
-    display: flex;
-    align-items: center;
-	height: 50px;
-	width: 50px;
-	border: 1px solid #f8049c;
-	border-radius: 50%;
-	border-top: none;
-	border-right: none;
-	margin: 16px auto;
-	animation: ${rotation} 1s linear infinite;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #f8049c;
+  border-radius: 50%;
+  border-top: none;
+  border-right: none;
+  margin: 16px auto;
+  animation: ${rotation} 1s linear infinite;
 `;
 
 export { Spinner };

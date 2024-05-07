@@ -1,5 +1,5 @@
 // components/Popular.js
-import Movie from './Pages';
+import Movie from "./Pages";
 
 function topRated() {
   return <Movie endpoint="top_rated" />;

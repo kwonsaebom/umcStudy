@@ -1,5 +1,5 @@
 // components/Popular.js
-import Movie from './Pages';
+import Movie from "./Pages";
 
 function nowPlaying() {
   return <Movie endpoint="now_playing" />;

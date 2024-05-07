@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Navbar = styled.div`
   width: 100%;
@@ -24,8 +23,7 @@ const NavbarMenu = styled(Link)`
 `;
 
 const UmcNavbarMenu = styled(NavbarMenu)`
-    margin-left: 20px;
-
+  margin-left: 20px;
 `;
 
 const UpcomingMenu = styled(NavbarMenu)`
@@ -33,27 +31,17 @@ const UpcomingMenu = styled(NavbarMenu)`
 `;
 
 function Nav() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const handleLoginClick = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };
-
-  const handleLogoutClick = () => {
-    setIsLoggedIn(false);
-  };
-
   return (
     <Navbar>
       <div>
-        <UmcNavbarMenu to={'/umc'}>UMC Movie</UmcNavbarMenu>
+        <UmcNavbarMenu to={"/umc"}>UMC Movie</UmcNavbarMenu>
       </div>
       <div>
-          <NavbarMenu to={'/signUp'}>회원가입</NavbarMenu>
-          <NavbarMenu to={'/popular'}>Polular</NavbarMenu>
-          <NavbarMenu to={'/nowPlaying'}>Now Playing</NavbarMenu>
-          <NavbarMenu to={'/topRated'}>Top Rated</NavbarMenu>
-          <UpcomingMenu to={'/upcoming'}>UpComing</UpcomingMenu>
+        <NavbarMenu to={"/signUp"}>회원가입</NavbarMenu>
+        <NavbarMenu to={"/popular"}>Polular</NavbarMenu>
+        <NavbarMenu to={"/nowPlaying"}>Now Playing</NavbarMenu>
+        <NavbarMenu to={"/topRated"}>Top Rated</NavbarMenu>
+        <UpcomingMenu to={"/upcoming"}>UpComing</UpcomingMenu>
       </div>
     </Navbar>
   );

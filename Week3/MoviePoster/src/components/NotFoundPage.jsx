@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
+import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const ErrorPage = styled.div`
   display: flex;
@@ -29,7 +29,7 @@ const NotFound = styled.i`
 
 const Button = styled.button`
   padding: 1rem 2rem;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #ffffff;
   font-size: 1.5rem;
 
@@ -47,23 +47,15 @@ const NotFoundPage = () => {
   const navigate = useNavigate();
 
   const handleGoToMain = () => {
-    navigate('/');
+    navigate("/");
   };
 
   return (
     <ErrorPage>
-        <Title>
-            Oops!
-        </Title>
-        <Message>
-            ☠️ 예상치 못한 에러가 발생했습니다 ☠️
-        </Message>
-        <NotFound>
-            Not Found
-        </NotFound>
-        <Button onClick={handleGoToMain}>
-            Go to Main 🚀
-        </Button>
+      <Title>Oops!</Title>
+      <Message>☠️ 예상치 못한 에러가 발생했습니다 ☠️</Message>
+      <NotFound>Not Found</NotFound>
+      <Button onClick={handleGoToMain}>Go to Main 🚀</Button>
     </ErrorPage>
   );
 };
