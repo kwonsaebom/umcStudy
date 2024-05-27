@@ -79,22 +79,14 @@ const Login = () => {
   };
 
   const validatePassword = (value) => {
-    const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]+$/;
-
     if (!value) {
       setPasswordError("비밀번호를 입력하세요!");
-    } else if (value.length < 4) {
-      setPasswordError("최소 4자리 이상 입력해주세요");
-    } else if (value.length > 12) {
-      setPasswordError("최대 12자리까지 입력 가능합니다");
-    } else if (!regex.test(value)) {
-      setPasswordError("비밀번호는 영어, 숫자, 특수문자를 포함해주세요");
     } else {
-      setPasswordError(false);
+      setPasswordError("");
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     validateId(id);
@@ -106,8 +98,33 @@ const Login = () => {
 
     if (!idError && !passwordError) {
       console.log("로그인 정보:", { id, password });
-      navigate("/");
-      alert("로그인에 성공하셨습니다!");
+      try {
+        const response = await fetch("http://localhost:8080/auth/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username: id, password }),
+        });
+
+        if (!response.ok) {
+          if (response.status === 401) {
+            alert("아이디 또는 비밀번호가 잘못되었습니다.");
+          } else {
+            alert("로그인 중 오류가 발생했습니다.");
+          }
+          return;
+        }
+
+        const data = await response.json();
+        alert(`${data.username}님, 환영합니다!`);
+        localStorage.setItem("token", data.token);
+        navigate("/");
+        navigate(0);
+      } catch (error) {
+        console.error("로그인 중 오류 발생:", error);
+        alert("로그인 중 오류가 발생했습니다.");
+      }
     }
   };
 
@@ -135,7 +152,9 @@ const Login = () => {
           placeholder="비밀번호"
         />
         {passwordError && <p className="errorMessage">{passwordError}</p>}
-        <button onClick={handleSubmit}>제출하기</button>
+        <button onClick={handleSubmit} disabled={!id || !password}>
+          제출하기
+        </button>
       </InputContainer>
     </Container>
   );

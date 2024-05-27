@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const HomeContainer = styled.div`
   display: flex;
@@ -137,6 +138,31 @@ const HomePage = () => {
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState([]);
   const [typingTimeout, setTypingTimeout] = useState(0);
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      // 토큰 검증 및 사용자 정보 가져오기
+      const fetchUserData = async () => {
+        try {
+          const response = await axios.get("http://localhost:8080/auth/me", {
+            headers: { Authorization: `Bearer ${token}` },
+          });
+
+          if (response.status === 200) {
+            const data = response.data;
+            setName(data.name);
+          }
+        } catch (error) {
+          console.error("Error during fetching user data:", error);
+          localStorage.removeItem("token"); // 유효하지 않은 토큰 삭제
+        }
+      };
+
+      fetchUserData();
+    }
+  }, []);
 
   const handleInputChange = (event) => {
     const value = event.target.value;
@@ -169,10 +195,12 @@ const HomePage = () => {
       .catch((error) => console.error("API 호출 중 오류 발생:", error));
   };
 
+  const welcomeText = name ? `${name}님 환영합니다!` : "환영합니다";
+
   return (
     <HomeContainer>
       <WelcomeScreen>
-        <h1>환영합니다</h1>
+        <h1>{welcomeText}</h1>
       </WelcomeScreen>
       <MainTitle>
         <h2>📽 Find your movies !</h2>

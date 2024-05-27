@@ -202,7 +202,16 @@ const SignUp = () => {
 
         if (response.status === 201) {
           alert("회원가입에 성공하셨습니다!");
-          navigate("/login");
+          navigate("/login", {
+            state: {
+              name: name,
+              username: id,
+              email: email,
+              age: age,
+              password: password,
+              passwordCheck: confirmPassword,
+            },
+          });
         } else {
           const errorData = await response.json();
           alert(`Error: ${errorData.message}`);
